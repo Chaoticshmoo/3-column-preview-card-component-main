@@ -81,6 +81,7 @@ p {
 .sedans button:hover {
     background-color: var(--sedans-bg);
     color: var(--bg-head-btn);
+    cursor: pointer;
 }
 
 .suvs {
@@ -95,6 +96,7 @@ p {
 .suvs button:hover {
     background-color: var(--suvs-bg);
     color: var(--bg-head-btn);
+    cursor: pointer;
 }
 
 .luxury {
@@ -111,6 +113,7 @@ p {
 .luxury button:hover {
     background-color: var(--luxury-bg);
     color: var(--bg-head-btn);
+    cursor: pointer;
 }
 
 @media (max-width: 1440px) {
