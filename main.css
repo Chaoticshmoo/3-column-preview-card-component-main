@@ -37,9 +37,8 @@ button {
     background-color: var(--bg-head-btn);
     border: none;
     border-radius: 30px;
-    padding: 15px 25px; 
+    padding: 13px 35px; 
     margin: 10px 0 0 0;
-    color: ;
     font-family: var(--main-font);
 }
 
@@ -97,9 +96,9 @@ p {
     color: var(--luxury-bg);
 }
 
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
     :root {
-        --section-padding: 5%;
+        --section-padding: 3%;
     }
     .container {
         flex-direction: row;
@@ -111,7 +110,7 @@ p {
     }
 
     .sedans, .suvs, .luxury {
-        width: 15%;
+        width: 17%;
     }
 
     .sedans {
@@ -126,7 +125,7 @@ p {
     }
 
     button {
-        margin-top: 40%;
+        margin-top: 30%;
     }
 }
 
