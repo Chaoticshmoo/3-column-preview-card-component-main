@@ -1,0 +1,136 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+/* Variables */
+
+/* Colors */
+--sedans-bg: hsl(31, 77%, 52%);
+--suvs-bg: hsl(184, 100%, 22%);
+--luxury-bg: hsl(179, 100%, 13%);
+--paragraph: hsla(0, 0%, 100%, 0.75);
+--bg-head-btn: hsl(0, 0%, 95%);
+
+/* Fonts */
+--f-size: 15px;
+--headers: 'Big Shoulders Display', sans-serif;
+--main-font: 'Lexend Deca', sans-serif;
+
+/* Layout */
+
+--section-padding: 15%;
+--rounded-corner: 10px;
+
+}
+
+/* -------------------------------------------------- */
+
+body {
+    background-color: var(--bg-head-btn);
+    font-family: var(--main-font);
+    font-size: var(--f-size);
+}
+
+button {
+    background-color: var(--bg-head-btn);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 25px; 
+    margin: 10px 0 0 0;
+    color: ;
+    font-family: var(--main-font);
+}
+
+h2 {
+    color: var(--bg-head-btn);
+    font-family: var(--headers);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+p {
+    color: var(--paragraph);
+    line-height: 1.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20% 5%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.sedans {
+    background-color: var(--sedans-bg);
+    padding: var(--section-padding);
+    border-top-left-radius: var(--rounded-corner);
+    border-top-right-radius: var(--rounded-corner);
+}
+
+.sedans button {
+    color: var(--sedans-bg);
+}
+
+.suvs {
+    background-color: var(--suvs-bg);
+    padding: var(--section-padding);
+}
+
+.suvs button {
+    color: var(--suvs-bg);
+}
+
+.luxury {
+    background-color: var(--luxury-bg);
+    padding: var(--section-padding);
+    border-bottom-left-radius: var(--rounded-corner);
+    border-bottom-right-radius: var(--rounded-corner);
+}
+
+.luxury button {
+    color: var(--luxury-bg);
+}
+
+@media (min-width: 1440px) {
+    :root {
+        --section-padding: 5%;
+    }
+    .container {
+        flex-direction: row;
+        flex-wrap: no-wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 10% 5%;
+        padding: 5px;
+    }
+
+    .sedans, .suvs, .luxury {
+        width: 15%;
+    }
+
+    .sedans {
+        border-bottom-left-radius: var(--rounded-corner);
+        border-top-right-radius: 0;
+    }
+
+    .luxury {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: var(--rounded-corner);
+        border-top-right-radius: var(--rounded-corner);
+    }
+
+    button {
+        margin-top: 40%;
+    }
+}
+
+/* Frontend Mentor */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
